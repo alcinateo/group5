@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Athenaeum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <span class="utility-left">A Digital Archive of Human Connection</span>
+      <span class="utility-right">FED CA2 PROJECT · 2026</span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="44 20 686 174" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athenaeum — Stories Without Borders">
+        <g transform="translate(20,10) scale(0.4)">
+          <circle cx="250" cy="215" r="170" fill="none" stroke="#C9A66B" stroke-width="2.5"/>
+          <circle cx="250" cy="215" r="152" fill="none" stroke="#C9A66B" stroke-width="1" opacity="0.55"/>
+          <path d="M 140 150 L 250 90 L 360 150 Z" fill="none" stroke="#EDE1CC" stroke-width="4.5" stroke-linejoin="round"/>
+          <line x1="128" y1="150" x2="372" y2="150" stroke="#EDE1CC" stroke-width="6"/>
+          <g stroke="#EDE1CC" stroke-width="6" stroke-linecap="round">
+            <line x1="152" y1="160" x2="152" y2="255"/>
+            <line x1="188" y1="160" x2="188" y2="255"/>
+            <line x1="224" y1="160" x2="224" y2="255"/>
+            <line x1="276" y1="160" x2="276" y2="255"/>
+            <line x1="312" y1="160" x2="312" y2="255"/>
+            <line x1="348" y1="160" x2="348" y2="255"/>
+          </g>
+          <g fill="#EDE1CC">
+            <rect x="144" y="153" width="16" height="8" rx="1"/>
+            <rect x="180" y="153" width="16" height="8" rx="1"/>
+            <rect x="216" y="153" width="16" height="8" rx="1"/>
+            <rect x="268" y="153" width="16" height="8" rx="1"/>
+            <rect x="304" y="153" width="16" height="8" rx="1"/>
+            <rect x="340" y="153" width="16" height="8" rx="1"/>
+          </g>
+          <rect x="128" y="255" width="244" height="10" fill="#EDE1CC"/>
+          <rect x="118" y="265" width="264" height="10" fill="#EDE1CC" opacity="0.85"/>
+          <g transform="translate(250,222)">
+            <path d="M -62 -6 C -40 -20 -18 -20 0 -8 C 18 -20 40 -20 62 -6 L 62 20 C 40 8 18 8 0 18 C -18 8 -40 8 -62 20 Z"
+                  fill="#2B1B12" stroke="#C9A66B" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="0" y1="-8" x2="0" y2="18" stroke="#C9A66B" stroke-width="3"/>
+            <path d="M -50 -2 C -34 -10 -18 -10 -4 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M -50 6 C -34 -2 -18 -2 -4 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 -2 C 18 -10 34 -10 50 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 6 C 18 -2 34 -2 50 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+          </g>
+          <g stroke="#C9A66B" stroke-width="2.2" fill="none" opacity="0.9">
+            <path d="M 172 275 C 150 300 148 330 165 350"/>
+            <path d="M 328 275 C 350 300 352 330 335 350"/>
+          </g>
+        </g>
+        <line x1="210" y1="35" x2="210" y2="185" stroke="#C9A66B" stroke-width="1.5" opacity="0.6"/>
+        <text x="235" y="118" font-family="Georgia, 'Times New Roman', serif"
+              font-size="62" font-weight="bold" letter-spacing="4" fill="#EDE1CC">ATHENAEUM</text>
+        <text x="238" y="152" font-family="Georgia, 'Times New Roman', serif"
+              font-size="19" letter-spacing="4" fill="#C9A66B">stories without borders</text>
+      </svg>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stories.html">Stories</a></li>
+      <li><a href="notice-board.html">Notice Board</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="stories.html" class="nav-progress" id="navProgress">
+        <svg class="nav-progress-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 5c3-1.5 6-1.5 8 0c2-1.5 5-1.5 8 0v13c-3-1.5-6-1.5-8 0c-2-1.5-5-1.5-8 0z"/>
+          <line x1="12" y1="5" x2="12" y2="18"></line>
+        </svg>
+        <span><span class="nav-progress-count" id="progressCount">0/8</span> Explored</span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <p class="eyebrow">About</p>
+  <h1>The Athenaeum</h1>
+  <p class="page-hero-sub">An ongoing collection of true stories about people finding each other across the lines that were supposed to keep them apart. Built as a FED coursework project — meant to be read like a real one.</p>
+</section>
+
+<section class="about-mission">
+  <blockquote>Every headline about the world tends to get written in terms of countries. But it's never really countries that cross a divide &mdash; it's just people, deciding to show up for each other anyway.</blockquote>
+</section>
+
+<section class="about-steps">
+  <div class="steps-inner">
+    <h2 class="library-heading">How This Archive Works</h2>
+    <p class="library-subheading">A short set of rules the Athenaeum tries to follow with every story it adds.</p>
+
+    <div class="steps-grid">
+      <div class="step">
+        <span class="step-number">01</span>
+        <h3>Every story is true</h3>
+        <p>Nothing here is fictionalised. Every event, date, and quote is drawn from documented history.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">02</span>
+        <h3>Told through people, not flags</h3>
+        <p>Each story focuses on the individuals who showed up, not the governments or institutions behind them.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">03</span>
+        <h3>Spanning a century</h3>
+        <p>Chosen deliberately from across a hundred years, from 1914 to 2023 &mdash; proof this isn't a one-off pattern.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">04</span>
+        <h3>Always growing</h3>
+        <p>Eight stories is the start, not the end. New ones get added to the shelf as they're found.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-creator">
+  <div class="about-creator-inner">
+    <h2>Who Made This</h2>
+    <p>The Athenaeum was designed and built by David, as a coursework project for FED CA2. [Add a line here about why you picked this topic, or what you wanted visitors to walk away feeling.]</p>
+  </div>
+</section>
+
+<section class="about-cta">
+  <div class="about-cta-inner">
+    <h2>Start Exploring</h2>
+    <p>Read one story, leave a note for the next person to find, or come back later and see who else has left something.</p>
+    <div class="cta-buttons">
+      <a href="index.html#collection" class="btn-primary">Explore the Collection</a>
+      <a href="notice-board.html" class="btn-outline">Leave a Note</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg class="footer-mark" viewBox="44 20 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athenaeum">
+        <g transform="translate(20,10) scale(0.4)">
+          <circle cx="250" cy="215" r="170" fill="none" stroke="#C9A66B" stroke-width="2.5"/>
+          <circle cx="250" cy="215" r="152" fill="none" stroke="#C9A66B" stroke-width="1" opacity="0.55"/>
+          <path d="M 140 150 L 250 90 L 360 150 Z" fill="none" stroke="#EDE1CC" stroke-width="4.5" stroke-linejoin="round"/>
+          <line x1="128" y1="150" x2="372" y2="150" stroke="#EDE1CC" stroke-width="6"/>
+          <g stroke="#EDE1CC" stroke-width="6" stroke-linecap="round">
+            <line x1="152" y1="160" x2="152" y2="255"/>
+            <line x1="188" y1="160" x2="188" y2="255"/>
+            <line x1="224" y1="160" x2="224" y2="255"/>
+            <line x1="276" y1="160" x2="276" y2="255"/>
+            <line x1="312" y1="160" x2="312" y2="255"/>
+            <line x1="348" y1="160" x2="348" y2="255"/>
+          </g>
+          <g fill="#EDE1CC">
+            <rect x="144" y="153" width="16" height="8" rx="1"/>
+            <rect x="180" y="153" width="16" height="8" rx="1"/>
+            <rect x="216" y="153" width="16" height="8" rx="1"/>
+            <rect x="268" y="153" width="16" height="8" rx="1"/>
+            <rect x="304" y="153" width="16" height="8" rx="1"/>
+            <rect x="340" y="153" width="16" height="8" rx="1"/>
+          </g>
+          <rect x="128" y="255" width="244" height="10" fill="#EDE1CC"/>
+          <rect x="118" y="265" width="264" height="10" fill="#EDE1CC" opacity="0.85"/>
+          <g transform="translate(250,222)">
+            <path d="M -62 -6 C -40 -20 -18 -20 0 -8 C 18 -20 40 -20 62 -6 L 62 20 C 40 8 18 8 0 18 C -18 8 -40 8 -62 20 Z"
+                  fill="#2B1B12" stroke="#C9A66B" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="0" y1="-8" x2="0" y2="18" stroke="#C9A66B" stroke-width="3"/>
+            <path d="M -50 -2 C -34 -10 -18 -10 -4 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M -50 6 C -34 -2 -18 -2 -4 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 -2 C 18 -10 34 -10 50 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 6 C 18 -2 34 -2 50 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+          </g>
+          <g stroke="#C9A66B" stroke-width="2.2" fill="none" opacity="0.9">
+            <path d="M 172 275 C 150 300 148 330 165 350"/>
+            <path d="M 328 275 C 350 300 352 330 335 350"/>
+          </g>
+        </g>
+      </svg>
+      <p class="footer-tagline">stories without borders</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="notice-board.html">Notice Board</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <p class="footer-contact">realsaikaung@gmail.com</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Email">✉</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Athenaeum &middot; FED Coursework Project &middot; David Alcina Tavier Jeongwon</p>
+  </div>
+</footer>
+
+<script src="js/reading-progress.js"></script>
+</body>
+</html>

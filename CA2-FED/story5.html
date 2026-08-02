@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Genome, Six Nations — Athenaeum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+<body style="--spine:#6b3a14">
+
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <span class="utility-left">A Digital Archive of Human Connection</span>
+      <span class="utility-right">FED CA2 PROJECT · 2026</span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="44 20 686 174" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athenaeum — Stories Without Borders">
+        <g transform="translate(20,10) scale(0.4)">
+          <circle cx="250" cy="215" r="170" fill="none" stroke="#C9A66B" stroke-width="2.5"/>
+          <circle cx="250" cy="215" r="152" fill="none" stroke="#C9A66B" stroke-width="1" opacity="0.55"/>
+          <path d="M 140 150 L 250 90 L 360 150 Z" fill="none" stroke="#EDE1CC" stroke-width="4.5" stroke-linejoin="round"/>
+          <line x1="128" y1="150" x2="372" y2="150" stroke="#EDE1CC" stroke-width="6"/>
+          <g stroke="#EDE1CC" stroke-width="6" stroke-linecap="round">
+            <line x1="152" y1="160" x2="152" y2="255"/>
+            <line x1="188" y1="160" x2="188" y2="255"/>
+            <line x1="224" y1="160" x2="224" y2="255"/>
+            <line x1="276" y1="160" x2="276" y2="255"/>
+            <line x1="312" y1="160" x2="312" y2="255"/>
+            <line x1="348" y1="160" x2="348" y2="255"/>
+          </g>
+          <g fill="#EDE1CC">
+            <rect x="144" y="153" width="16" height="8" rx="1"/>
+            <rect x="180" y="153" width="16" height="8" rx="1"/>
+            <rect x="216" y="153" width="16" height="8" rx="1"/>
+            <rect x="268" y="153" width="16" height="8" rx="1"/>
+            <rect x="304" y="153" width="16" height="8" rx="1"/>
+            <rect x="340" y="153" width="16" height="8" rx="1"/>
+          </g>
+          <rect x="128" y="255" width="244" height="10" fill="#EDE1CC"/>
+          <rect x="118" y="265" width="264" height="10" fill="#EDE1CC" opacity="0.85"/>
+          <g transform="translate(250,222)">
+            <path d="M -62 -6 C -40 -20 -18 -20 0 -8 C 18 -20 40 -20 62 -6 L 62 20 C 40 8 18 8 0 18 C -18 8 -40 8 -62 20 Z"
+                  fill="#2B1B12" stroke="#C9A66B" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="0" y1="-8" x2="0" y2="18" stroke="#C9A66B" stroke-width="3"/>
+            <path d="M -50 -2 C -34 -10 -18 -10 -4 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M -50 6 C -34 -2 -18 -2 -4 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 -2 C 18 -10 34 -10 50 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 6 C 18 -2 34 -2 50 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+          </g>
+          <g stroke="#C9A66B" stroke-width="2.2" fill="none" opacity="0.9">
+            <path d="M 172 275 C 150 300 148 330 165 350"/>
+            <path d="M 328 275 C 350 300 352 330 335 350"/>
+          </g>
+        </g>
+        <line x1="210" y1="35" x2="210" y2="185" stroke="#C9A66B" stroke-width="1.5" opacity="0.6"/>
+        <text x="235" y="118" font-family="Georgia, 'Times New Roman', serif"
+              font-size="62" font-weight="bold" letter-spacing="4" fill="#EDE1CC">ATHENAEUM</text>
+        <text x="238" y="152" font-family="Georgia, 'Times New Roman', serif"
+              font-size="19" letter-spacing="4" fill="#C9A66B">stories without borders</text>
+      </svg>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stories.html" class="active">Stories</a></li>
+      <li><a href="notice-board.html">Notice Board</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="stories.html" class="nav-progress" id="navProgress">
+        <svg class="nav-progress-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 5c3-1.5 6-1.5 8 0c2-1.5 5-1.5 8 0v13c-3-1.5-6-1.5-8 0c-2-1.5-5-1.5-8 0z"/>
+          <line x1="12" y1="5" x2="12" y2="18"></line>
+        </svg>
+        <span><span class="nav-progress-count" id="progressCount">0/8</span> Explored</span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('images/350-51186070485_2703618fdc_o-1-768x512.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+
+  <a href="index.html#collection" class="story-back">&larr; Back to the Collection</a>
+
+  <div class="story-hero-content">
+    <p class="eyebrow">United States &#8646; United Kingdom &#8646; Japan &#8646; Germany &#8646; France &#8646; China</p>
+    <h1 class="story-title">One Genome, Six Nations</h1>
+    <p class="story-dek">For over a decade, scientists on three continents raced not against each other but against a deadline, agreeing to give away everything they found, for free, the moment they found it.</p>
+  </div>
+</section>
+
+<article class="story-body">
+  <aside class="story-facts">
+    <h4>Quick Facts</h4>
+    <dl>
+      <dt>When</dt>
+      <dd>1990&ndash;2003, with the data-sharing agreement signed in 1996</dd>
+      <dt>Where</dt>
+      <dd>Laboratories across the United States, United Kingdom, Japan, Germany, France, and China</dd>
+      <dt>Who</dt>
+      <dd>The International Human Genome Sequencing Consortium &mdash; thousands of scientists who never patented what they found</dd>
+      <dt>Remembered for</dt>
+      <dd>Proving, base pair by base pair, that any two humans are more than 99.9% genetically identical</dd>
+    </dl>
+  </aside>
+
+  <div class="story-content">
+    <p>In 1990, publicly funded labs on three continents began an almost absurd task: read out all 3 billion letters of the human genetic code. No single country had the money or the machines to do it alone, so from the start it was split into pieces and handed to teams in Cambridge, Houston, St. Louis, Paris, Tokyo, and Beijing, each one responsible for its own fragment of the puzzle.</p>
+
+    <p>In 1996, the leaders of those teams met in Bermuda and agreed to something that had never really been tried in science before: any sequence any of them decoded would be uploaded publicly within 24 hours, free for any scientist anywhere to use immediately &mdash; no patents, no exclusive rights, no waiting for a journal to publish it first.</p>
+
+    <blockquote class="pull-quote">They agreed to give away, overnight and for free, the very thing careers are usually built on keeping.</blockquote>
+
+    <p>That agreement mattered more than it might sound. A private American company had entered the race around the same time, planning to patent parts of the genome and charge for access to it. The public consortium's answer was to work faster and hand off what they found immediately &mdash; a lab in Japan picking up, overnight, exactly where a lab in Britain had stopped that evening.</p>
+
+    <p>A working draft was announced jointly in June 2000, with leaders in Washington and London connected by video link to share the news together. By April 2003, the full sequence was finished and published, free, for anyone in the world to read. The cover of the journal that carried it showed the double helix built entirely out of thousands of tiny photographs of human faces &mdash; every one of them holding, underneath the skin, almost exactly the same code.</p>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg class="footer-mark" viewBox="44 20 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athenaeum">
+        <g transform="translate(20,10) scale(0.4)">
+          <circle cx="250" cy="215" r="170" fill="none" stroke="#C9A66B" stroke-width="2.5"/>
+          <circle cx="250" cy="215" r="152" fill="none" stroke="#C9A66B" stroke-width="1" opacity="0.55"/>
+          <path d="M 140 150 L 250 90 L 360 150 Z" fill="none" stroke="#EDE1CC" stroke-width="4.5" stroke-linejoin="round"/>
+          <line x1="128" y1="150" x2="372" y2="150" stroke="#EDE1CC" stroke-width="6"/>
+          <g stroke="#EDE1CC" stroke-width="6" stroke-linecap="round">
+            <line x1="152" y1="160" x2="152" y2="255"/>
+            <line x1="188" y1="160" x2="188" y2="255"/>
+            <line x1="224" y1="160" x2="224" y2="255"/>
+            <line x1="276" y1="160" x2="276" y2="255"/>
+            <line x1="312" y1="160" x2="312" y2="255"/>
+            <line x1="348" y1="160" x2="348" y2="255"/>
+          </g>
+          <g fill="#EDE1CC">
+            <rect x="144" y="153" width="16" height="8" rx="1"/>
+            <rect x="180" y="153" width="16" height="8" rx="1"/>
+            <rect x="216" y="153" width="16" height="8" rx="1"/>
+            <rect x="268" y="153" width="16" height="8" rx="1"/>
+            <rect x="304" y="153" width="16" height="8" rx="1"/>
+            <rect x="340" y="153" width="16" height="8" rx="1"/>
+          </g>
+          <rect x="128" y="255" width="244" height="10" fill="#EDE1CC"/>
+          <rect x="118" y="265" width="264" height="10" fill="#EDE1CC" opacity="0.85"/>
+          <g transform="translate(250,222)">
+            <path d="M -62 -6 C -40 -20 -18 -20 0 -8 C 18 -20 40 -20 62 -6 L 62 20 C 40 8 18 8 0 18 C -18 8 -40 8 -62 20 Z"
+                  fill="#2B1B12" stroke="#C9A66B" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="0" y1="-8" x2="0" y2="18" stroke="#C9A66B" stroke-width="3"/>
+            <path d="M -50 -2 C -34 -10 -18 -10 -4 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M -50 6 C -34 -2 -18 -2 -4 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 -2 C 18 -10 34 -10 50 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 6 C 18 -2 34 -2 50 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+          </g>
+          <g stroke="#C9A66B" stroke-width="2.2" fill="none" opacity="0.9">
+            <path d="M 172 275 C 150 300 148 330 165 350"/>
+            <path d="M 328 275 C 350 300 352 330 335 350"/>
+          </g>
+        </g>
+      </svg>
+      <p class="footer-tagline">stories without borders</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="notice-board.html">Notice Board</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <p class="footer-contact">realsaikaung@gmail.com</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Email">✉</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Athenaeum &middot; FED Coursework Project &middot; David Alcina Tavier Jeongwon</p>
+  </div>
+</footer>
+
+<script src="js/reading-progress.js"></script>
+</body>
+</html>

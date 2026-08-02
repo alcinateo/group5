@@ -173,10 +173,15 @@ ul { list-style: none; }
   align-items: center;
   gap: 16px;
   padding: 14px;
-  max-width: 420px;
+  width: 420px;
+  height: 108px;
   border-top: 3px solid var(--amber);
   box-shadow: 0 12px 30px rgba(43,27,18,0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-text {
+  min-width: 0;
 }
 
 .featured-card:hover {
@@ -210,12 +215,22 @@ ul { list-style: none; }
   font-size: 0.95rem;
   margin-bottom: 4px;
   transition: opacity 0.15s ease;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .featured-text p {
   font-size: 0.82rem;
   color: var(--taupe);
   line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ---------- Story page ---------- */
@@ -478,12 +493,29 @@ ul { list-style: none; }
 .book {
   flex: 1 1 0;
   height: 100%;
-  background: var(--spine);
+  background:
+    /* embossed decorative bands, top and bottom */
+    linear-gradient(180deg,
+      transparent 0%, transparent 10%,
+      rgba(237,225,204,0.5) 10%, rgba(237,225,204,0.5) 11.2%,
+      transparent 11.2%, transparent 13.4%,
+      rgba(237,225,204,0.5) 13.4%, rgba(237,225,204,0.5) 14.6%,
+      transparent 14.6%, transparent 85.4%,
+      rgba(237,225,204,0.5) 85.4%, rgba(237,225,204,0.5) 86.6%,
+      transparent 86.6%, transparent 88.8%,
+      rgba(237,225,204,0.5) 88.8%, rgba(237,225,204,0.5) 90%,
+      transparent 90%, transparent 100%),
+    /* rounded-spine curvature shading */
+    linear-gradient(90deg,
+      rgba(0,0,0,0.32) 0%, rgba(255,255,255,0.1) 8%,
+      transparent 22%, transparent 78%, rgba(0,0,0,0.4) 100%),
+    /* faint cloth/leather grain */
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 1px, transparent 1px, transparent 5px),
+    var(--spine);
   border-radius: 5px 5px 0 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 22px;
   position: relative;
   overflow: hidden;
   box-shadow: inset -8px 0 14px rgba(0,0,0,0.18);
@@ -849,7 +881,7 @@ ul { list-style: none; }
 @media (max-width: 800px) {
   .navbar { flex-wrap: wrap; gap: 12px; }
   .nav-links { order: 3; width: 100%; gap: 18px; flex-wrap: wrap; }
-  .featured-card { left: 16px; right: 16px; max-width: none; }
+  .featured-card { left: 16px; right: 16px; width: auto; }
 
   .shelf {
     flex-wrap: wrap;

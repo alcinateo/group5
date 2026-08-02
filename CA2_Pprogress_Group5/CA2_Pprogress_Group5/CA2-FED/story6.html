@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Athenaeum — A Living Archive of Human Connection</title>
+<title>The Rescue of the 33 — Athenaeum</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/png" href="images/favicon-32x32.png">
 </head>
-<body>
+<body style="--spine:#a68b36">
 
 <header class="site-header">
   <div class="utility-bar">
@@ -23,14 +23,11 @@
   <nav class="navbar">
     <a href="index.html" class="logo">
       <svg class="logo-mark" viewBox="44 20 686 174" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athenaeum — Stories Without Borders">
-        <!-- ICON: circle fill dropped so the mark sits flush on the dark navbar, gold ring keeps the badge look -->
         <g transform="translate(20,10) scale(0.4)">
           <circle cx="250" cy="215" r="170" fill="none" stroke="#C9A66B" stroke-width="2.5"/>
           <circle cx="250" cy="215" r="152" fill="none" stroke="#C9A66B" stroke-width="1" opacity="0.55"/>
-
           <path d="M 140 150 L 250 90 L 360 150 Z" fill="none" stroke="#EDE1CC" stroke-width="4.5" stroke-linejoin="round"/>
           <line x1="128" y1="150" x2="372" y2="150" stroke="#EDE1CC" stroke-width="6"/>
-
           <g stroke="#EDE1CC" stroke-width="6" stroke-linecap="round">
             <line x1="152" y1="160" x2="152" y2="255"/>
             <line x1="188" y1="160" x2="188" y2="255"/>
@@ -39,7 +36,6 @@
             <line x1="312" y1="160" x2="312" y2="255"/>
             <line x1="348" y1="160" x2="348" y2="255"/>
           </g>
-
           <g fill="#EDE1CC">
             <rect x="144" y="153" width="16" height="8" rx="1"/>
             <rect x="180" y="153" width="16" height="8" rx="1"/>
@@ -48,10 +44,8 @@
             <rect x="304" y="153" width="16" height="8" rx="1"/>
             <rect x="340" y="153" width="16" height="8" rx="1"/>
           </g>
-
           <rect x="128" y="255" width="244" height="10" fill="#EDE1CC"/>
           <rect x="118" y="265" width="264" height="10" fill="#EDE1CC" opacity="0.85"/>
-
           <g transform="translate(250,222)">
             <path d="M -62 -6 C -40 -20 -18 -20 0 -8 C 18 -20 40 -20 62 -6 L 62 20 C 40 8 18 8 0 18 C -18 8 -40 8 -62 20 Z"
                   fill="#2B1B12" stroke="#C9A66B" stroke-width="3.5" stroke-linejoin="round"/>
@@ -61,29 +55,22 @@
             <path d="M 4 -2 C 18 -10 34 -10 50 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
             <path d="M 4 6 C 18 -2 34 -2 50 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
           </g>
-
           <g stroke="#C9A66B" stroke-width="2.2" fill="none" opacity="0.9">
             <path d="M 172 275 C 150 300 148 330 165 350"/>
             <path d="M 328 275 C 350 300 352 330 335 350"/>
           </g>
         </g>
-
-        <!-- divider between icon and text -->
         <line x1="210" y1="35" x2="210" y2="185" stroke="#C9A66B" stroke-width="1.5" opacity="0.6"/>
-
-        <!-- wordmark, cream for contrast against the dark background -->
         <text x="235" y="118" font-family="Georgia, 'Times New Roman', serif"
               font-size="62" font-weight="bold" letter-spacing="4" fill="#EDE1CC">ATHENAEUM</text>
-
-        <!-- tagline, gold -->
         <text x="238" y="152" font-family="Georgia, 'Times New Roman', serif"
               font-size="19" letter-spacing="4" fill="#C9A66B">stories without borders</text>
       </svg>
     </a>
 
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="stories.html">Stories</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stories.html" class="active">Stories</a></li>
       <li><a href="notice-board.html">Notice Board</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -101,73 +88,46 @@
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-bg layer-a" id="heroLayerA"></div>
-  <div class="hero-bg layer-b" id="heroLayerB"></div>
-  <div class="hero-overlay"></div>
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('images/Juan-Illanes-third-Chilean-miner-rescued-October-13-2010.webp')"></div>
+  <div class="story-hero-overlay"></div>
 
-  <div class="hero-content">
-    <p class="eyebrow">Welcome to the Athenaeum</p>
-    <h1 class="headline">We are more alike than the borders between us.</h1>
-  </div>
+  <a href="index.html#collection" class="story-back">&larr; Back to the Collection</a>
 
-  <a href="index.html" class="featured-card" id="featuredCard">
-    <img src="" alt="" class="featured-img" id="featuredImg">
-    <div class="featured-text">
-      <span class="featured-label">Pick a Random Story</span>
-      <h3 id="featuredTitle"></h3>
-      <p id="featuredBlurb"></p>
-    </div>
-  </a>
-</section>
-
-<section class="library" id="collection">
-  <div class="library-inner">
-    <h2 class="library-heading">The Collection</h2>
-    <p class="library-subheading">Eight true stories of people crossing paths — not as nations, but as people. Pick one to begin.</p>
-
-    <div class="timeline">
-      <div class="timeline-pin" style="--spine:#625334"><span class="timeline-year">1914</span><span class="timeline-dot"></span></div>
-      <div class="timeline-pin" style="--spine:#855740"><span class="timeline-year">1975</span><span class="timeline-dot"></span></div>
-      <div class="timeline-pin" style="--spine:#5c5347"><span class="timeline-year">1989</span><span class="timeline-dot"></span></div>
-      <div class="timeline-pin" style="--spine:#e0954f"><span class="timeline-year">1998</span><span class="timeline-dot"></span></div>
-      <div class="timeline-pin is-tbd" style="--spine:#6b3a14"><span class="timeline-year">&mdash;</span><span class="timeline-dot"></span></div>
-      <div class="timeline-pin" style="--spine:#a68b36"><span class="timeline-year">2010</span><span class="timeline-dot"></span></div>
-      <div class="timeline-pin" style="--spine:#9c3d42"><span class="timeline-year">2018</span><span class="timeline-dot"></span></div>
-      <div class="timeline-pin is-tbd" style="--spine:#b96a28"><span class="timeline-year">&mdash;</span><span class="timeline-dot"></span></div>
-    </div>
-
-    <div class="shelf">
-      <a class="book" style="--spine:#625334; --book-bg:url('../images/xmas-truce-hover.webp')" href="story1.html">
-        <span class="book-spine-label">Story 01</span>
-        <span class="book-hover-title">Christmas Truce of 1914</span>
-      </a>
-      <a class="book" style="--spine:#855740; --book-bg:url('../images/ast-005-298.webp')" href="story2.html">
-        <span class="book-spine-label">Story 02</span>
-        <span class="book-hover-title">A Handshake in Orbit</span>
-      </a>
-      <a class="book" style="--spine:#5c5347; --book-bg:url('../images/fall-berlin-wall-1989-with-crowds-celebrating-end-cold-war_1314467-81651.avif')" href="story3.html">
-        <span class="book-spine-label">Story 03</span>
-        <span class="book-hover-title">The Wall Comes Down</span>
-      </a>
-      <a class="book" style="--spine:#e0954f; --book-bg:url('../images/First_Crew_to_ISS_Highlights_pillars.jpg')" href="story4.html">
-        <span class="book-spine-label">Story 04</span>
-        <span class="book-hover-title">One Station, Fifteen Nations</span>
-      </a>
-      <a class="book" style="--spine:#6b3a14" href="story5.html"><span class="book-spine-label">Story 05</span></a>
-      <a class="book" style="--spine:#a68b36; --book-bg:url('../images/download.jpg')" href="story6.html">
-        <span class="book-spine-label">Story 06</span>
-        <span class="book-hover-title">The Rescue of the 33</span>
-      </a>
-      <a class="book" style="--spine:#9c3d42; --book-bg:url('../images/Shutterstock_9437274eb.jpg')" href="story7.html">
-        <span class="book-spine-label">Story 07</span>
-        <span class="book-hover-title">One Flag, Two Koreas</span>
-      </a>
-      <a class="book" style="--spine:#b96a28" href="story8.html"><span class="book-spine-label">Story 08</span></a>
-    </div>
-    <div class="shelf-plank"></div>
+  <div class="story-hero-content">
+    <p class="eyebrow">Chile &#8646; The World</p>
+    <h1 class="story-title">The Rescue of the 33</h1>
+    <p class="story-dek">When 33 miners were trapped half a mile underground, engineers and specialists from a dozen countries raced together to bring them home.</p>
   </div>
 </section>
+
+<article class="story-body">
+  <aside class="story-facts">
+    <h4>Quick Facts</h4>
+    <dl>
+      <dt>When</dt>
+      <dd>5 August &ndash; 13 October 2010</dd>
+      <dt>Where</dt>
+      <dd>San Jos&eacute; mine, Atacama Desert, Chile</dd>
+      <dt>Who</dt>
+      <dd>33 Chilean miners &amp; an international rescue effort</dd>
+      <dt>Remembered for</dt>
+      <dd>The Fénix capsule rescue, watched live by roughly a billion people</dd>
+    </dl>
+  </aside>
+
+  <div class="story-content">
+    <p>On 5 August 2010, a collapse sealed 33 men inside the San Jos&eacute; copper-gold mine, nearly half a mile beneath Chile's Atacama Desert. For 17 days, no one on the surface knew if any of them were still alive.</p>
+
+    <p>Then a drill bit broke through to the shelter where the miners had been rationing scraps of food, and came back up with a note taped to it: <em>"Estamos bien en el refugio los 33"</em> &mdash; "We are well in the shelter, the 33 of us." What had been a national tragedy turned into an international effort almost overnight. Chilean engineers were joined by specialists from NASA, drilling teams and equipment from the US, and mining experts from across South Africa, Australia, and beyond &mdash; racing to design and drill a rescue shaft before the miners' physical and mental health gave out.</p>
+
+    <blockquote class="pull-quote">For 69 days, a mine collapse in the Atacama Desert became the one thing the whole world was watching together.</blockquote>
+
+    <p>The rescue itself took almost 24 hours. One at a time, each miner was pulled to the surface inside a narrow capsule named Fénix 2 &mdash; Phoenix &mdash; and the entire operation was broadcast live, watched by an estimated one billion people across the planet.</p>
+
+    <p>None of the engineers who designed that rescue shaft had worked together before that August. They came from different companies, different governments, different continents, and took orders in different languages &mdash; brought together by nothing but the same 33 names and the same clock.</p>
+  </div>
+</article>
 
 <footer class="site-footer">
   <div class="footer-inner">
@@ -236,11 +196,9 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2026 Athenaeum &middot; FED CA2 PROJECT &middot; David Alcina Tavier Jeongwon</p>
+    <p>&copy; 2026 Athenaeum &middot; FED Coursework Project &middot; David Alcina Tavier Jeongwon</p>
   </div>
 </footer>
 
-<script src="js/hero-cycle.js"></script>
-<script src="js/featured-story.js"></script>
 </body>
 </html>

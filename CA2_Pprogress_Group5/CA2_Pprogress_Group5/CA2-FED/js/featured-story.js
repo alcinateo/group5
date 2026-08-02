@@ -36,6 +36,18 @@ const featuredStories = [
     blurb: "Cold War rivals spent over a decade bolting their separately built modules into a single home in orbit.",
     image: "images/iss_nasa.webp",
     link: "story4.html"
+  },
+  {
+    title: "One Genome, Six Nations",
+    blurb: "Scientists on three continents agreed to give away everything they found about human DNA, for free.",
+    image: "images/350-51186070485_2703618fdc_o-1-768x512.jpg",
+    link: "story5.html"
+  },
+  {
+    title: "One Disaster, Ninety Nations",
+    blurb: "After the Turkey-Syria earthquake, rescue teams arrived from neighbours who hadn't spoken in decades.",
+    image: "images/2048c0b1-eb4b-4360-bc7d-6964f1807de1.jpg",
+    link: "story8.html"
   }
 ];
 
